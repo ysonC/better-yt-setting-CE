@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const captionsEnabled = data.captionsEnabled;
 
         // Set initial button text based on stored setting
-        if (captionsEnabled === true) { toggleButton.textContent = "Always Off"; }
-        else { toggleButton.textContent = "Always On"; }
+        if (captionsEnabled === true) { toggleButton.textContent = "Always On"; }
+        else { toggleButton.textContent = "Always Off"; }
     });
 
     // Handle button click to toggle the captions setting
