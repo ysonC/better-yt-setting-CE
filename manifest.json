@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Caption Toggle",
+    "description": "Enable or disable YouTube captions automatically.",
+    "version": "1.0",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://*.youtube.com/*"
+    ],
+    "content_scripts": [
+        {
+            "js": [
+                "contentScript.js"
+            ],
+            "matches": [
+                "https://*.youtube.com/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}
