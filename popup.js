@@ -21,13 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Set captions to be disabled
                 chrome.storage.sync.set({ captionsEnabled: false }, () => {
                     console.log("Captions will now always be disabled.");
-                    toggleButton.textContent = "Always On"; // Update button text
+                    toggleButton.textContent = "Always Off"; // Update button text
                 });
             } else {
                 // Set captions to be enabled
                 chrome.storage.sync.set({ captionsEnabled: true }, () => {
                     console.log("Captions will now always be enabled.");
-                    toggleButton.textContent = "Always Off"; // Update button text
+                    toggleButton.textContent = "Always On"; // Update button text
                 });
             }
         });
